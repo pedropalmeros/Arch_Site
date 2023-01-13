@@ -75,3 +75,137 @@ img{
     margin-top: 5rem;
 }
 
+/** HEADER **/
+.header{
+    background-image: url("../img/hero.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--blanco);
+    min-height: 60rem;
+    padding: 5rem 0;
+}
+
+
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    height: calc(60rem - 4rem);
+    justify-content: space-between;
+}
+
+.nombre-sitio{
+    font-size:3rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.nombre-sitio span{
+    font-weight: 900;
+}
+
+@media (min-width: 768px) {
+    .nombre-sitio{
+        font-size: 5rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .barra{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.contacto{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media (min-width: 768px) {
+    .contacto{
+        align-items: flex-end;
+    }
+}
+
+.telefono{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.telefono::before{
+    background-image: url("../img/telefono.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    display: block;
+    height: 2rem;
+    width: 2rem;
+}
+
+.header a{
+    color: var(--blanco);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navegacion{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .navegacion{
+        flex-direction: row;
+    }
+}
+
+.navegacion .link{
+    padding: 0.2rem 0;
+    text-align: center;
+    transition: background-color 300ms;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .navegacion .link{
+        padding: 1rem 2rem;
+    }
+}
+.navegacion .link:hover{
+    background-color: rgb( 255 255 255 / .5);
+    color: var(--negro);
+}
+
+.slogan{
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .slogan{
+        text-align: right;
+    }
+}
+
+.slogan h1{
+    font-size: 3rem;
+    margin: 0;
+}
+@media (min-width: 768px) {
+    .slogan h1{
+        font-size: 5rem;
+    }
+}
+
+.slogan p{
+    line-height: 1;
+    margin: 0;
+}
