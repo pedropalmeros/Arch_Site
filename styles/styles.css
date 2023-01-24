@@ -67,6 +67,12 @@ img{
     color: var(--blanco);
 }
 
+.white-link{
+    color: var(--blanco);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
 /** UTILIDADES **/
 .text-center{
     text-align: center;
@@ -150,11 +156,7 @@ img{
     width: 2rem;
 }
 
-.header a{
-    color: var(--blanco);
-    font-size: 2rem;
-    text-decoration: none;
-}
+
 
 .navegacion{
     align-items: center;
@@ -363,4 +365,27 @@ img{
         grid-column: 2/3;
         grid-row: 1/2;
     }  
+}
+
+/**FOOTER**/
+.footer{
+    background-image: url(../img/footer_bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: var(--blanco);
+
+    display: flex;
+    flex-direction:column;
+    height: 50rem;
+    justify-content: flex-end;
+}
+
+.copyright{
+    background-color: var(--negro);
+    font-size: 2rem;
+    margin: 5rem 0 0 0;
+    padding: 1rem;
+    text-align: center
 }
