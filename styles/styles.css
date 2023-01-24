@@ -238,9 +238,34 @@ img{
     }
 }
 
-
 .contenido-nosotros h2,
 .contenido-nosotros p{
     margin-bottom: 1rem;
 }
 
+
+/** MODELOS **/
+.modelo{
+    background-position: bottom center;
+    background-repeat: no repeat;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+
+.contenido-modelo{
+    background-color: white;
+    padding: 5rem;
+}
+
+.basico{
+    background-image: url(../img/modelo_basico.jpg);
+}
+
+.premier{
+    background-image: url(../img/modelo_premier.jpg);
+}
+
+.elite{
+    background-image: url(../img/modelo_elite.jpg);
+
+}
